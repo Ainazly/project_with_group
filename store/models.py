@@ -6,6 +6,9 @@ class Store(models.Model):
     filial = models.CharField(max_length=200)
     name_director = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.name_store
+
 
 class Product(models.Model):
     title = models.CharField(max_length=200)
